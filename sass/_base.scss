@@ -1,0 +1,261 @@
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.7;
+    color: $color-grey-dark;
+}
+
+ul {
+    list-style-type: none;
+}
+a {
+    text-decoration: none;
+}
+img {
+    width: 100%;
+    display: block;
+}
+h1,
+h2,
+h3,
+h4 {
+    letter-spacing: $spacing;
+    text-transform: capitalize;
+    line-height: 1.25;
+    margin-bottom: 0.75rem;
+}
+h1 {
+    font-size: 3rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.25rem;
+}
+h4 {
+    font-size: 0.875rem;
+}
+p {
+    margin-bottom: 1.25rem;
+    color: var(--clr-grey-5);
+    &:nth-last-child(1) {
+        margin-bottom: 0;
+    }
+}
+
+.section {
+    padding: 5rem 0;
+    &:nth-last-child(1) {
+        padding: 0;
+    }
+
+    &-title {
+        text-align: center;
+        margin-bottom: 4rem;
+
+        h2 {
+            text-transform: uppercase;
+        }
+        
+    }
+
+    &-center {
+        width: 90vw;
+        margin: 0 auto;
+        max-width: 1170px;
+    }
+}
+
+// creator
+.creator {
+    &-img,
+    &-info {
+        margin-bottom: 2rem;
+        align-self: center;
+        text-align: center;
+    }
+    &-center {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+@media (min-width: 576px) {
+    .creator {
+        &-img,
+        &-info {
+            flex: 0 0 calc(50% - 2rem);
+        }
+    }
+}
+
+// testimonials
+
+.testmonials {
+    background: $clr-primary-3;
+}
+.testmonial {
+    text-align: center;
+    &-text {
+        max-width: 20rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    &-center {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+}
+
+@media (min-width: 576px) {
+    .testmonials-center {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .testmonial {
+        flex: 0 0 calc(50% - 1rem);
+        margin-bottom: 1rem;
+    }
+}
+@media (min-width: 992px) {
+    .testmonial {
+        flex: 0 0 calc(33.333% - 1rem);
+    }
+}
+
+// product
+
+.product {
+    text-align: center;
+
+    &-center {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    &-text {
+        max-width: 20rem;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    img {
+        display: inline-block;
+        margin-bottom: 1.5rem;
+        width: 50px;
+    }
+}
+.price {
+    font-weight: bold;
+}
+
+@media (min-width: 576px) {
+    .products-center {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .product {
+        flex: 0 0 calc(50% - 1rem);
+        margin-bottom: 1rem;
+    }
+}
+@media (min-width: 992px) {
+    .product {
+        flex: 0 0 calc(33.333% - 1rem);
+        margin-bottom: 3rem;
+    }
+}
+
+
+
+.contact-form {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+iframe {
+    width: 100%;
+}
+
+input {
+    margin-bottom: 2rem;
+    width: 50%;
+
+    height: 50px;
+    margin-bottom: 1rem;
+    border: none;
+    border-bottom: solid 1px;
+    outline: none;
+}
+
+textarea {
+    width: 50%;
+    height: 100px;
+    margin: 1rem 0;
+}
+
+@media (min-width: 576px) {
+    .contact-info {
+        display: flex;
+        justify-content: space-between;
+    }
+    .contact-form {
+        width: 50%;
+    }
+    .location-map {
+        width: 50%;
+    }
+}
+
+// footer
+
+.footer {
+    background: $clr-primary-2;
+}
+.footer-wrap {
+    text-align: center;
+    @media (min-width: 576px) {
+        display: flex;
+        justify-content: center;
+    }
+}
+
+.footer-links {
+    margin-bottom: 1.5rem;
+    @media (min-width: 576px) {
+        margin-left: 5%;
+        margin-right: 5%;
+        width: 15%;
+    }
+    h3 {
+        color: $color-white;
+        margin-bottom: 3rem;
+    }
+}
+.footer-link {
+    text-transform: capitalize;
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    display: inline-block;
+    transition: all 0.3s ease;
+    @media (min-width: 576px) {
+        font-size: 1rem;
+    }
+}
+.footer-link:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+}
+.copyright{
+    text-align: center;
+}

@@ -1,6 +1,7 @@
 header {
     background-image: url(../img/hero.jpg);
     height: 100vh;
+    width: 100vw;
     background-size: cover;
     position: relative;
     display: flex;
@@ -10,7 +11,10 @@ header {
 .hero {
     text-align: center;
     height: 50vh;
-    margin-left: 50%;
+    // margin-left: 50%;
+    @media (min-width: 576px) {
+        margin-left: 50%;
+    }
 
     h1 {
         text-transform: uppercase;
@@ -19,14 +23,14 @@ header {
         max-width: 35rem;
         margin-left: auto;
         margin-right: auto;
-        color: var(--clr-white);
         letter-spacing: var(--spacing);
     }
+
     &-btn {
         padding: 0.9rem 1.6rem;
         font-size: 1.25rem;
-        background-color: var(--clr-white);
-        color: var(--clr-primary-5);
+        background-color: $clr-primary-3;
+        color: $color-white;
     }
     &btn:hover {
         background: transparent;
